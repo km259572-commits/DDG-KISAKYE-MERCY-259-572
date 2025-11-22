@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDG Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+<style>
+ body{
+  color: rgb(241, 11, 161);
+ } 
+</style>
+  </head>
+<body>
+  <header>
+    <h1 style="font-size: 100px;">DDG Restaurant</h1>
+     <nav>
+       <div class="topnav">
+           <a href="./index.html">Home</a>
+           <a class="active" href="./DDGServices.html">Services</a>
+           <a href="./DDGAboutUs.html">About Us</a>
+       </div>
+     </nav>
+  </header>
+  <main>
+
+        <section class="services">
+            <h1>Our Services</h1>
+            <p>We offer a range of services to make your dining experience unforgettable.</p>
+             <div class="service-card">
+                <h2>Catering</h2>
+                <p>Let us cater your next event or party.</p>
+            </div>
+            <div class="service-card">
+                <h2>Delivery</h2>
+                <p>Enjoy our delicious food from the comfort of your own home.</p>
+            </div>
+            <div class="service-card">
+                <h2>Reservations</h2>
+                <p>Book a table at your convenience.</p>
+            </div>
+        </section>
+        <section class="login">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal" style="background-color: aqua;">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./images/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="Registerbtn">Register</button>
+      <span class="psw"><a style="text-decoration: none;" href="#">Forgot Password?</a></span>
+    </div>
+    
+  </form>
+</div> 
+<script>
+var modal = document.getElementById('id01')
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+            
+</section>
+    </main>
+    
+</body>
+ <footer>
+  
+ <div>
+  <p><a style="text-decoration: none;" href="mailto:hege@example.com">customerservices@ddg.com</a></p>
+     <a href="#" class="fa fa-facebook"></a>
+     <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-linkedin"></a>
+     <a href="#" class="fa fa-youtube"></a>
+     <a href="#" class="fa fa-instagram"></a>
+     <a href="#" class="fa fa-pinterest"></a>
+     <a href="#" class="fa fa-snapchat-ghost"></a>
+     <a href="#" class="fa fa-reddit"></a>
+     <a href="#" class="fa fa-rss"></a>
+</div>
+ <p>Author: DDG Group LLC</p> 
+<p>&copy; 2025 DDG Restaurant. All rights reserved.</p>
+</footer>
+</html>
